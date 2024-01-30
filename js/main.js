@@ -130,3 +130,79 @@ console.log(strrrr('ali',2.1231231231231312313))
 
 
 ////part 2
+
+
+const courses = [
+    {
+        id:1,
+        name:'html',
+        time:10,
+        isCompleted : true,
+    },
+    {
+        id:2,
+        name:'css',
+        time:14,
+        isCompleted : false,
+    }
+]
+
+console.log(courses[0].time)
+//convert to json
+const resualt = JSON.stringify(courses)
+console.log(resualt)
+
+//for
+
+for (let i=0 ;i<10;i++){
+    console.log("ali")
+}
+
+
+
+//while
+let j=1;
+while(j<10){
+    console.log(`reza ${j}`)
+    j+=1;
+}
+
+
+for(let i=0 ; i<courses.length ; i++){
+    console.log(courses[i].name)
+}
+
+
+for(let c of courses){
+    console.log(c)
+}
+
+
+//loop
+//forech , map , filter
+
+courses.forEach(function(c){
+console.log(c)
+})
+
+
+//createing new aryy form the current arry
+//map
+
+const newCourses = courses.map(function(cc){
+    return {name : cc.name , id: cc.id , time:cc.time}
+})
+console.log(newCourses)
+
+console.log("filter")
+
+//filter
+const newCourse2 = courses.filter(function(cc){
+    return cc.isCompleted === true
+}).map(function(c){
+    return c.name
+})
+console.log(newCourse2)
+
+
+
