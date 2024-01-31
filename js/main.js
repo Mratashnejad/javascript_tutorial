@@ -204,5 +204,56 @@ const newCourse2 = courses.filter(function(cc){
 })
 console.log(newCourse2)
 
+let t = 1233;
+
+if(t === 10){
+    console.log(`the is is ${t}`)
+}else{
+    console.log(`the t is not equal to ${t}`)
+}
+
+
+//and &&  OR  ||
+
+if(t < 10 && t===10){
+    console.log(`the is is ${t}`)
+}else{
+    console.log(`the t is not equal to ${t}`)
+}
+
+
+const z = 10;
+const color = z>10 ? 'red' : 'blue';
+console.log(color)
+
+
+const animal = 'dog'
+switch(animal){
+    case 'dog':
+        console.log('its a dog')
+        break;
+    case  'gorg':
+        console.log('its a gorg')
+        break;
+
+}
+
+//functions
+//arrwo function
+
+function addNum(num1,num2){
+    console.log(num1 + num2)
+}
+addNum(1,2)
+
+
+//
+const addSum =  (num3 = 3 ,  num4 = 4) => {
+    console.log(num3 + num4)
+}
+console.log(addSum(10,12))
+//
+courses.forEach (x => console.log(x))
+
 
 
